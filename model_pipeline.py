@@ -41,11 +41,10 @@ print("Accuracy:", accuracy_score(y_test, ypred))
 print(classification_report(y_test, ypred))
 
 
+import joblib
 
+# Save your trained model (with preprocessing pipeline)
+joblib.dump(model, "marketing_response_model.pkl")
 
-# import joblib
+print("✅ Model saved successfully!")
 
-# # Save your trained model (with preprocessing pipeline)
-# joblib.dump(model, "marketing_response_model.pkl")
-
-# print("✅ Model saved successfully!")
